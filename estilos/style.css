@@ -67,14 +67,28 @@ div#formulario > p{
 
 form > div.campo {
     background-color: #5f2c82;
-    width: 100%;
+    width: calc(100% - 50px);
     display: block;
+    transform: translateY(-10px);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 2px solid black;
 }
 
 div.campo > label {
     display: none;
+    border: none;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+div.campo > input {
+    background-color: #befffd;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
 }
 
 form > input[type=submit] {
